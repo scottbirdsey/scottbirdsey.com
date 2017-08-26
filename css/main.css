@@ -45,6 +45,8 @@ input, textarea {
 	font-size: 1.2em;
 	padding: .5em 1em;
 	font-family: "Financier", sans-serif;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 button, input[type=submit] {
@@ -66,7 +68,7 @@ img {
 }
 
 a {
-	color: inherit;
+	color: #386fe8;
 	text-decoration: underline;
 }
 
@@ -251,21 +253,24 @@ main > .pg-section > h1 {
 /* home */
 
 .tmpl-home .pg-section:nth-of-type(2n) {
-	padding-bottom: 0em;
-	padding: 0;
-	padding-top: 4em;
+	padding-bottom: 0;
 }
 
-.tmpl-home .pg-section:nth-of-type(2n) div {
-	padding-bottom: 3em;
+.tmpl-home .pg-section:nth-of-type(2n) div > *:last-child {
 	border-bottom: 1px solid silver;
-	padding: 0 0 3em;
+	padding-bottom: 3em;
 }
 
 .pg-home-intro {
-	font-size: 2em;
+	font-size: 1.5em;
 	color: white;
     background: #485a8e;
+}
+
+@media (min-width: 600px) {
+	.pg-home-intro {
+		font-size: 2em;
+	}	
 }
 
 .pg-home-intro > div {
@@ -342,15 +347,28 @@ main > .pg-section > h1 {
 }
 
 /* Grids */
-.grd {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
-	justify-content: space-between;
+
+
+
+.group {
+	margin-bottom: 2em;
 }
 
-.grd-2 > * {
-	width: 46.755656108597285067%;
+@media (min-width: 48em) {
+	.grd {
+		display: -ms-flex;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.grd-2 > * {
+		width: 46.755656108597285067%;
+	}
+
+	.group {
+		margin-bottom: 0;
+	}
 }
 
 .grp {
