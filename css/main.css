@@ -119,10 +119,15 @@ header {
 }
 
 header > div {
-	display: flex;
 	justify-content: space-between;
 	max-width: 1404px;
 	margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+	header > div {
+		display: flex;
+	}
 }
 
 .logo {
@@ -133,9 +138,15 @@ header > div {
 
 header h1 {
 	font-size: 1.6em;
-	padding: .6em;
+	padding: .6em .6em 0;
 	margin: 0;
 	width: 350px;
+}
+
+@media (min-width: 600px) {
+	header h1 {
+		padding: .6em;
+	}
 }
 
 header h1 a, header h1 a:visited {
@@ -152,8 +163,14 @@ h1 > span {
 	display: flex;
 	justify-content: space-between;
 	width: 270px;
-	padding: 0 1em;
+	padding: 0;
 	margin: 0;
+}
+
+@media (min-width: 600px) {
+	.main-menu {
+		padding: 0 1em;
+	}
 }
 
 .main-menu li {
@@ -177,8 +194,16 @@ h1 > span {
 	width: 100%;
 	height: 3px;
 	background: #bf21b8;
-	top: 0;
+	top: auto;
 	left: 0;
+	bottom: 0;
+}
+
+@media (min-width: 600px) {
+	.main-menu a:hover:before, .main-menu a.active:before {
+		top: 0;
+		bottom: auto;
+	}
 }
 
 .main-menu a.active {
