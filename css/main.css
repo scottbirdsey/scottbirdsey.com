@@ -68,18 +68,19 @@ img {
 }
 
 a {
-	color: #386fe8;
-	text-decoration: underline;
+	-webkit-box-shadow: inset 0 -2px 0 #386fe8;
+    box-shadow: inset 0 -2px 0 #386fe8;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover, a:visited:hover {
 	text-decoration: none;
-	color: #386fe8;
 
 }
 
 a:visited {
-	color: #386fe8;
+	color: inherit;
 }
 
 p, li {
@@ -154,6 +155,8 @@ header h1 {
 header h1 a, header h1 a:visited {
 	text-decoration: none;
 	color: black;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 h1 > span {
@@ -188,6 +191,8 @@ h1 > span {
 	text-decoration: none;
 	color: inherit;
 	position: relative;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .main-menu a:hover:before, .main-menu a.active:before {
@@ -490,6 +495,13 @@ blockquote p {
 footer {
 	background: #394361;
 	color: white;
+}
+
+footer a {
+	color: white;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-decoration: underline;
 }
 
 .pg-footer > div {
