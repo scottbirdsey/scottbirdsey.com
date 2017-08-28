@@ -214,6 +214,11 @@ h1 > span {
 	bottom: 0;
 }
 
+.main-menu a.disabled:before {
+	content: none;
+	display: none;
+}
+
 @media (min-width: 600px) {
 	.main-menu a:hover:before, .main-menu a.active:before {
 		top: 0;
