@@ -76,6 +76,7 @@ a {
 
 a:hover, a:visited:hover {
 	text-decoration: none;
+	color: #386fe8;
 
 }
 
@@ -112,6 +113,13 @@ h1, h2, h3, h4 {
 	font-size: 2em;
 	margin-bottom: 1em;
 	text-align: center;
+}
+
+@media (min-width: 48em) {
+	.pg-section > h2 {
+		font-size: 2.8em;
+	}
+
 }
 
 /* Header */
