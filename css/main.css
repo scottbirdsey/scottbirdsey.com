@@ -109,6 +109,11 @@ h1, h2, h3, h4 {
 	font-family: "Nunito", sans-serif;
 }
 
+h2 > a {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
 .pg-section > h2 {
 	font-size: 2em;
 	margin-bottom: 1em;
@@ -466,7 +471,54 @@ main > .pg-section > h1 {
 /* Article page */
 
 .post {
-	max-width: 750px;
+	max-width: 100%
+	padding: 0 0;
+}
+
+.post-content > *, .post-title, .post-meta {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+@media (min-width: 64em) {
+	.post-content>*, .post-title, .post-meta {
+		max-width: 750px;
+	}
+}
+
+@media (min-width: 36em) {
+
+
+	.post figure.left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.post figure.right {
+		float: right;
+		margin: 0 0 2em 2em;
+	}
+
+	
+	.post figure:not(.big) {
+		max-width: 300px;
+	}
+
+}
+
+
+@media (min-width: 52em) {
+	.post figure:not(.big) {
+		max-width: 450px;
+	}
+}
+
+.post figure {
+	margin-bottom: 3em;
+}
+
+.post .big {
+	max-width: 1280px;
 }
 .post-title {
 	font-size: 3em;
@@ -474,7 +526,7 @@ main > .pg-section > h1 {
 }
 .post-meta {
 	font-size: 1em;
-	margin: 1em 0;
+	margin: 1em auto;
 	font-style: italic;
 }
 .post-content {
@@ -487,6 +539,8 @@ main > .pg-section > h1 {
 
 figcaption {
 	font-style: italic;
+	text-align: left;
+	color: #3d5aa8;
 }
 
 blockquote {
@@ -502,6 +556,20 @@ blockquote p {
 	margin-bottom: 0;
 }
 
+.note {
+    text-align: left;
+    margin: 0 auto 2em;
+    background: #f3f8f9;
+    padding: 1em;
+    border-radius: 6px;
+	color: #3d5aa8;
+	font-family: "Nunito", sans-serif;
+	font-size: 1em;
+}
+
+.post figure {
+
+}
 
 /* Footer */
 
