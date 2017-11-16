@@ -294,6 +294,20 @@ main > .pg-section > h1 {
     background: #485a8e;
 }
 
+.pg-home-intro > div:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+
+.pg-home-intro img {
+	float: right;
+	width: 300px;
+	height: auto;
+	border-radius: 99999%;
+}
+
 @media (min-width: 600px) {
 	.pg-home-intro {
 		font-size: 2em;
@@ -301,12 +315,17 @@ main > .pg-section > h1 {
 }
 
 .pg-home-intro > div {
+	max-width: 1024px;
+}
+
+.pg-home-intro > div > div {
 	padding: 2em 1em;
+	float: left;
 }
 
 @media (min-width: 768px) {
 	.pg-home-intro > div {
-		padding: 4em 2em;
+		padding: 2em 2em;
 	}
 }
 
@@ -608,3 +627,4 @@ footer a {
 .center {
 	text-align: center;
 }
+
