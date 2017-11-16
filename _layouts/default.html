@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+  <title>{{ page.title | escape }} | Scott Birdsey</title>
+  {% include head.html %}
+	<meta property="og:title"              content="{{ page.title | escape }}" />
+	<meta property="og:description"        content="{{ page.lede | escape }}" />
+
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

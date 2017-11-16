@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "The Weidt Group"
+date:   2017-07-22 18:48:24 -0400
+categories: work website
+lede: The Weidt Group
+thumb: dr-pilates.jpg
+---
+TWG

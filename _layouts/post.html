@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="tmpl-page" aria-label="Content">
+
+  <div class="pg-section">
+
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      
+      {% if page.categories contains "writing" %} 
+      <p class="post-meta">
+        I <a href="/writes">wrote</a> this on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ page.date | date: date_format }}, on the topic of {{ page.tags }}</time>. 
+        {% if page.author %}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        {% endif %}
+      </p>
+      {% endif %}
+
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+      {% if site.disqus.shortname %}
+        {% include disqus_comments.html %}
+      {% endif %}
+    </article>
+
+  </div>
+
+</main>

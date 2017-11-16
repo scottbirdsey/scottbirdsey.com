@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<main class="tmpl-page tmpl-work" aria-label="Content">
+
+	<div class="pg-section">
+
+		<h1>{{ page.title | escape }}</h1>
+
+		<div>
+
+			<ul class="work-list">
+			{% for post in site.categories.work %}
+			  <li>
+			    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+			    <a class="post-link" href="{{ post.url | relative_url }}"><img src="/assets/img/thumb/{{ post.thumb }}"></a>
+			    <h2>
+			      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+			    </h2>
+			    <p>{{ post.lede }}</p>
+
+			  </li>
+			{% endfor %}
+			</ul>
+
+		</div>
+
+	</div>
+
+</main>
