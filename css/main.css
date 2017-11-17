@@ -74,6 +74,12 @@ a {
     color: inherit;
 }
 
+.post-thumb {
+	-webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+
 a:hover, a:visited:hover {
 	text-decoration: none;
 	color: #386fe8;
@@ -467,6 +473,11 @@ main > .pg-section > h1 {
 
 .work-list li h2 {
 	margin: .5em 0;
+	font-size: 1.5rem;
+}
+
+.work-list li p {
+	font-size: 1.25rem;
 }
 
 .stats li {
