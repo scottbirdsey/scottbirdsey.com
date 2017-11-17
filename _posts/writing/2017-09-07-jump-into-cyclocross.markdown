@@ -2,7 +2,7 @@
 layout: post
 title:  "Jump Into Cyclocross!"
 date:   2017-09-09 12:00:00 -0400
-categories: writing
+categories: writes
 tags: [bike racing]
 lede: A piece for the September 2017 issue of ADK Sports about cyclocross.
 ---

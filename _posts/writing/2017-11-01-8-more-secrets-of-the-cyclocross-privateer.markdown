@@ -2,7 +2,7 @@
 layout: post
 title:  "8 More Secrets of the Cyclocross Privateer"
 date:   2017-10-31 12:00:00 -0400
-categories: writing
+categories: writes
 tags: [bike racing]
 lede: Assorted tricks in no order to get you to the finish line faster.
 ---

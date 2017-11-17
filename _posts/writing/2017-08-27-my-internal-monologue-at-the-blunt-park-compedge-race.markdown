@@ -2,7 +2,7 @@
 layout: post
 title:  "My Internal Monologue at the Blunt Park CompEdge Race"
 date:   2017-08-27 12:00:00 -0400
-categories: writing
+categories: writes
 tags: [bike racing]
 lede: A tale of a tailspin.
 ---

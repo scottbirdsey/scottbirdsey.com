@@ -27,7 +27,8 @@ gems:
   - jekyll-feed
 
 # This is the permalink system for blog posts -- so far, "Work" posts need to have their permalinks overridden in front-matter of each post  
-permalink: /writes/:title
+permalink: /:categories/:title
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

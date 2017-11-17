@@ -5,5 +5,6 @@ date:   2017-07-22 18:48:24 -0400
 categories: work apparel website
 lede: CBRC is a thirty-year-old cycling club in Upstate NY. I created a new identity for them - a logo, full kit, and website.
 thumb: dr-pilates.jpg
+published: false
 ---
 CBRC Kit, website, logo
