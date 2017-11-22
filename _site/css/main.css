@@ -309,11 +309,22 @@ main > .pg-section > h1 {
 
 
 .pg-home-intro img {
-	float: right;
 	width: 300px;
 	height: auto;
 	border-radius: 99999%;
     border: 4px solid #f3f8f9;
+    margin-top: 1em;
+}
+
+@media (min-width: 1024px) {
+	.pg-home-intro img {
+		float: right;
+		width: 300px;
+		height: auto;
+		border-radius: 99999%;
+	    border: 4px solid #f3f8f9;
+	    margin-top: 0;
+	}
 }
 
 @media (min-width: 600px) {
@@ -324,18 +335,25 @@ main > .pg-section > h1 {
 
 .pg-home-intro > div {
 	max-width: 1024px;
+	text-align: center;
+	padding: 1em;
 }
 
-.pg-home-intro > div > div {
-	padding: 2em 1em;
-	float: left;
-}
-
-@media (min-width: 768px) {
-	.pg-home-intro > div {
-		padding: 2em 2em;
+@media (min-width: 1024px) {
+	.pg-home-intro > div > div {
+		padding: 2em 1em;
+		float: left;
 	}
 }
+
+
+@media (min-width: 1024px) {
+	.pg-home-intro > div {
+		padding: 2em 2em;
+		text-align: left;
+	}
+}
+
 
 .pg-home-intro h2 {
 	padding: 1rem 0;
@@ -546,6 +564,10 @@ main > .pg-section > h1 {
 
 }
 
+figure.left, figure.right {
+	clear: both;
+}
+
 
 @media (min-width: 52em) {
 	.post figure:not(.big) {
@@ -571,6 +593,11 @@ main > .pg-section > h1 {
 }
 .post-content {
 	margin-top: 3em;
+}
+.post-content:after {
+	clear: both;
+	content: "";
+	display: block;
 }
 
 .post-content > * {
