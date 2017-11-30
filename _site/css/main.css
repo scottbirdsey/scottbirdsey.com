@@ -566,12 +566,13 @@ main > .pg-section > h1 {
 
 figure.left, figure.right {
 	clear: both;
+	max-width: 450px;
 }
 
 
 @media (min-width: 52em) {
-	.post figure:not(.big) {
-		max-width: 450px;
+	.post figure:not(.big):not(.left):not(.right) {
+		max-width: 750px;
 	}
 }
 
