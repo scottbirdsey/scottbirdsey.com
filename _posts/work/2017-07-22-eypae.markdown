@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "EYP"
+date:   2017-07-22 18:48:24 -0400
+categories:
+- makes
+lede: A responsive CMS superpower
+thumb: eypae.jpg
+---
+
+
+<figure class="left">
+	<img src="/assets/img/work/thumbs/eypae.jpg">
+</figure>
+
+<a href="http://www.eypae.com">EYP</a> is one of the largest architecture firms in the country, and I have been developing the current incarnation of their website over the past two years.

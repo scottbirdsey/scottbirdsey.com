@@ -116,7 +116,7 @@ ol > li {
 }
 
 h1, h2, h3, h4 {
-	font-family: "Nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 }
 
 h2 > a {
@@ -126,7 +126,7 @@ h2 > a {
 
 .pg-section > h2 {
 	font-size: 2em;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	text-align: center;
 	font-weight: normal;
 }
@@ -142,7 +142,7 @@ h2 > a {
 
 header {
 	background: rgb(243, 248, 249);
-	font-family: "Nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 }
 
 header > div {
@@ -253,7 +253,7 @@ h1 > span {
 
 main > .pg-section > h1 {
 	margin-bottom: 1.5em;
-	font-family: "nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 }
 
 /* Page Layout */
@@ -290,7 +290,7 @@ main > .pg-section > h1 {
 	padding-bottom: 0;
 }
 
-.tmpl-home .pg-section:nth-of-type(2n) div > *:last-child {
+.tmpl-home .pg-section:nth-of-type(2n) > div > *:last-child {
 	border-bottom: 1px solid silver;
 	padding-bottom: 3em;
 }
@@ -374,11 +374,16 @@ main > .pg-section > h1 {
 }
 
 .pg-home-cycling h3 {
-	font-family: "Nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 	font-weight: normal;
 	font-size: 2em;
 	line-height: 1.4;
 	margin: 2em auto 1em
+}
+
+.center > div > p {
+	max-width: 31em;
+	margin: 0 auto;
 }
 
 /* Work */
@@ -409,7 +414,7 @@ main > .pg-section > h1 {
 
 .post-list > li h2 {
 	font-size: 1.75em;
-	font-family: "nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 	margin: .12em 0;
 }
 
@@ -511,18 +516,50 @@ main > .pg-section > h1 {
 	display: none;
 }
 
-.highlight-list {
+.highlights {
     text-align: left;
-    max-width: 600px;
-    margin: 0 auto 2em;
+    max-width: 100%;
+    margin: 4em auto 2em;
     background: #f3f8f9;
     padding: 2em 2em 2em 4em;
     border-radius: 6px;
+
+}
+
+.highlights > h3 {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.highlights > ol {
+	display: flex;
+	justify-content: space-between;
 }
 
 .highlight-list li {
 	margin-bottom: .5em;
 	color: #3d5aa8;
+	list-style: none;
+	width: 26%;
+	text-align: center;
+}
+
+.highlight-list li:before {
+	font-size: 2.5em;
+	display: block;
+}
+
+.highlight-list li:nth-of-type(1):before {
+	content: "1";
+}
+
+.highlight-list li:nth-of-type(2):before {
+	content: "2";
+}
+
+.highlight-list li:nth-of-type(3):before {
+	content: "3";
 }
 
 
@@ -585,7 +622,7 @@ figure.left, figure.right {
 }
 .post-title {
 	font-size: 3em;
-	font-family: "Nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 }
 .post-meta {
 	font-size: 1em;
@@ -637,7 +674,7 @@ blockquote p {
     padding: 1em;
     border-radius: 6px;
 	color: #3d5aa8;
-	font-family: "Nunito", sans-serif;
+	font-family: "Hind", sans-serif;
 	font-size: 1em;
 }
 

@@ -7,4 +7,14 @@ categories:
 lede: A logo and design system, extended into clothing, a website, and other pieces.
 thumb: cbrc.jpg
 ---
-CBRC Kit, website, logo
+
+<figure class="left">
+	<img src="/assets/img/work/cbrc-logo.png">
+</figure>
+
+Capital Bicycle Racing Club is a grassroots cycling group in the Capital Region of New York that is over thirty years old. They’ve been around a long time, and had many looks and logos – and are sure to have many more. This is my contribution to that lineage.
+
+<figure class="left">
+	<img src="/assets/img/work/cbrc-kits.jpg">
+	<figcaption>Photo by Mary Zawacki</figcaption>
+<figure>

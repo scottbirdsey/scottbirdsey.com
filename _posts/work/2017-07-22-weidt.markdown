@@ -2,9 +2,15 @@
 layout: post
 title:  "The Weidt Group"
 date:   2017-07-22 18:48:24 -0400
-categories: work website
-lede: The Weidt Group
-thumb: dr-pilates.jpg
-published: false
+categories:
+- makes
+lede: Corporate website for a unique energy modeling firm
+thumb: weidt.jpg
 ---
-TWG
+
+
+<figure class="left">
+	<img src="/assets/img/work/thumbs/weidt.jpg">
+</figure>
+
+I carried out the full design and development of <a href="http://theweidtgroup.com">The Weidt Group’s corporate website</a> following a wonderful content strategy advisement by twin industry strategiets <a href="http://bondartscience.com/">Bond Art + Science</a> and <a href="http://webmeadow.com">webmeadow</a>. The site is a lean Wordpress CMS, and a marketing employee is able to manage news, events, and other content.
