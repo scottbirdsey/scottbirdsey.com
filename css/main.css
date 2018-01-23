@@ -38,7 +38,7 @@ body {
 	margin: 0;
 	font-family: 'Financier', sans-serif;
 	background: #fcfeff;
-	color: #292121;
+	color: #585656;
 }
 
 input, textarea {
@@ -73,7 +73,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 .post-thumb {
 	-webkit-box-shadow: none;
     box-shadow: none;
@@ -90,6 +89,26 @@ a:visited {
 	color: inherit;
 }
 
+a.button, a.button:visited {
+	font-family: "Hind", sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	border: none;
+	background: #ff45d3;
+	box-shadow: none;
+	padding: .5em 1em .3em;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+a.button:hover {
+	background: #bf22b8;
+	color: white;
+}
+
+
 p, li {
 	font-size: 1.5rem;
 	line-height: 1.4;
@@ -97,10 +116,6 @@ p, li {
 
 p {
 	margin-bottom: 1.5em;
-}
-
-p:last-of-type {
-	margin-bottom: 0;
 }
 
 ul, ol {
@@ -117,6 +132,8 @@ ol > li {
 
 h1, h2, h3, h4 {
 	font-family: "Hind", sans-serif;
+	font-weight: 600;
+	color: #292121;;
 }
 
 h2 > a {
@@ -357,6 +374,7 @@ main > .pg-section > h1 {
 
 .pg-home-intro h2 {
 	padding: 1rem 0;
+	color: white;
 }
 
 .pg-home-cycling h4 {
@@ -389,6 +407,8 @@ main > .pg-section > h1 {
 /* Work */
 .tmpl-work > .pg-section > h1 {
 	text-align: center;
+	font-size: 3em;
+	margin-bottom: .5em;
 }
 
 .tmpl-work > .pg-section {
@@ -495,7 +515,7 @@ main > .pg-section > h1 {
 }
 
 .work-list li h2 {
-	margin: .5em 0;
+	margin: .5em 0 0;
 	font-size: 1.5rem;
 }
 
@@ -541,8 +561,9 @@ main > .pg-section > h1 {
 	margin-bottom: .5em;
 	color: #3d5aa8;
 	list-style: none;
-	width: 26%;
+	width: 28%;
 	text-align: center;
+	font-size: 1.25em;
 }
 
 .highlight-list li:before {
@@ -573,6 +594,10 @@ main > .pg-section > h1 {
 .post-content > *, .post-title, .post-meta {
 	max-width: 900px;
 	margin: 0 auto;
+}
+
+.post-content > *:last-child {
+	margin-bottom: 0;
 }
 
 @media (min-width: 64em) {
@@ -689,20 +714,22 @@ blockquote p {
 /* Footer */
 
 footer {
-	background: #394361;
-	color: white;
+	background: rgb(243, 248, 249);
+	text-align: center;
+	color: silver;
+	padding: 2em 0;
+
 }
 
 footer a {
-	color: white;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	text-decoration: underline;
 }
 
-.pg-footer > div {
-	padding-top: 4em;
-	padding-bottom: 4em;
+.pg-footer p {
+	padding: 1.5em 0 0;
+	font-size: 1em;
 }
 
 /* Non-semantic helper classes */
