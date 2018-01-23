@@ -111,7 +111,7 @@ a.button:hover {
 
 p, li {
 	font-size: 1.5rem;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 p {
@@ -132,7 +132,7 @@ ol > li {
 
 h1, h2, h3, h4 {
 	font-family: "Hind", sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	color: #292121;;
 }
 
@@ -377,6 +377,14 @@ main > .pg-section > h1 {
 	color: white;
 }
 
+.pg-home-intro a {
+	box-shadow: inset 0 -2px 0 #ff44d4;
+}
+
+.pg-home-intro a:hover {
+	color: #ff44d4;
+}
+
 .pg-home-cycling h4 {
 	color: silver;
 	letter-spacing: 1px;
@@ -396,7 +404,7 @@ main > .pg-section > h1 {
 	font-weight: normal;
 	font-size: 2em;
 	line-height: 1.4;
-	margin: 2em auto 1em
+	margin: 1em auto 1em
 }
 
 .center > div > p {
@@ -549,7 +557,7 @@ main > .pg-section > h1 {
 .highlights > h3 {
 	font-size: 1.5em;
 	text-align: center;
-	margin-bottom: 1.5em;
+	margin-bottom: .5em;
 }
 
 .highlights > ol {
