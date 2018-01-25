@@ -557,7 +557,7 @@ main > .pg-section > h1 {
 }
 
 .wufoo textarea {
-	border-color: #3e59a8;
+	border: 1px solid #3e59a8;
 }
 
 .wufoo .input-list li {
