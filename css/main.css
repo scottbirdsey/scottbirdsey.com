@@ -221,7 +221,7 @@ h1 > span {
 
 .main-menu a {
 	display: block;
-	padding: 1.2em .8em;
+	padding: 1.2em .8em 1em;
 	text-decoration: none;
 	color: inherit;
 	position: relative;
@@ -339,7 +339,7 @@ main > .pg-section > h1 {
 @media (min-width: 1024px) {
 	.pg-home-intro img {
 		float: right;
-		width: 300px;
+		width: 280px;
 		height: auto;
 		border-radius: 99999%;
 	    border: 4px solid #f3f8f9;
@@ -369,7 +369,7 @@ main > .pg-section > h1 {
 
 @media (min-width: 1024px) {
 	.pg-home-intro > div {
-		padding: 2em 2em;
+		padding: 1em 2em;
 		text-align: left;
 	}
 }
@@ -407,7 +407,8 @@ main > .pg-section > h1 {
 	font-weight: normal;
 	font-size: 2em;
 	line-height: 1.4;
-	margin: 1em auto 1em
+	margin: 1em auto 1em;
+	text-align: center;
 }
 
 .center > div > p {
