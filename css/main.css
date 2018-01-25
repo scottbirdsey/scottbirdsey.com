@@ -381,7 +381,13 @@ main > .pg-section > h1 {
 .pg-home-intro > div {
 	max-width: 1024px;
 	text-align: center;
-	padding: 1em;
+	padding: 1em .5em;
+}
+
+@media (min-width: 600px) {
+	.pg-home-intro > div {
+		padding: 1em;
+	}
 }
 
 @media (min-width: 1024px) {
