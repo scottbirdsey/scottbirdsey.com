@@ -1,9 +1,20 @@
+
+
+@font-face {
+	font-family: 'Financier';
+	src: url('../assets/fonts/FinancierTextWeb-Bold.eot');
+  	src: url('../assets/fonts/FinancierTextWeb-Bold.eot?#iefix') format('embedded-opentype'), 
+       url('../assets/fonts/FinancierTextWeb-Bold.woff2') format('woff2'), 
+       url('../assets/fonts/FinancierTextWeb-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Financier';
   src: url('../assets/fonts/FinancierTextWeb-Regular.eot');
   src: url('../assets/fonts/FinancierTextWeb-Regular.eot?#iefix') format('embedded-opentype'), 
        url('../assets/fonts/FinancierTextWeb-Regular.woff2') format('woff2'), 
-       url('../assets/fonts/FinancierTextWeb-Regular.eot.woff') format('woff');
+       url('../assets/fonts/FinancierTextWeb-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -16,16 +27,6 @@
        url('../assets/fonts/FinancierTextWeb-RegularItalic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
-}
-
-@font-face {
-	font-family: 'Financier';
-	src: url('../assets/fonts/FinancierTextWeb-Bold.eot');
-  	src: url('../assets/fonts/FinancierTextWeb-Bold.eot?#iefix') format('embedded-opentype'), 
-       url('../assets/fonts/FinancierTextWeb-Bold.woff2') format('woff2'), 
-       url('../assets/fonts/FinancierTextWeb-Bold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
 }
 
 * {
@@ -43,6 +44,7 @@ html, body {
 body {
 	margin: 0;
 	font-family: 'Financier', sans-serif;
+	font-weight: 400;
 	background: #fcfeff;
 	color: #585656;
 
@@ -63,6 +65,7 @@ input:focus, textarea:focus {
 img {
 	max-width: 100%;
 	height: auto;
+	border: none;
 }
 
 a {
@@ -163,6 +166,7 @@ header {
 }
 
 header > div {
+	-webkit-box-align: center;
 	-webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -172,8 +176,8 @@ header > div {
 
 @media (min-width: 600px) {
 	header > div {
-		display: -webkit-flex;
-		display: -ms-flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 }
@@ -188,7 +192,6 @@ header h1 {
 	font-size: 1.6em;
 	padding: .6em .6em 0;
 	margin: 0;
-	width: 350px;
 }
 
 @media (min-width: 600px) {
@@ -205,33 +208,32 @@ header h1 a, header h1 a:visited {
 }
 
 h1 > span {
-	position: relative;
-	top: 2px;
 }
 
 .main-menu {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
 	-webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 	width: 270px;
 	padding: 0;
 	margin: 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 @media (min-width: 600px) {
 	.main-menu {
 		padding: 0 1em;
+		margin: 0;
 	}
 }
 
 .main-menu li {
-	width: 50%;
 	text-align: center;
 	font-size: 1.2em;
 	margin-bottom: 0;
+	display: inline-block;
 }
 
 .main-menu a {
@@ -505,8 +507,8 @@ main > .pg-section > h1 {
 
 @media (min-width: 48em) {
 	.grd {
-		display: -ms-flex;
-		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: -webkit-box;
 		display: flex;
 		-webkit-box-pack: justify;
     	-ms-flex-pack: justify;
@@ -551,13 +553,16 @@ main > .pg-section > h1 {
 }
 
 .work-list {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex; 
 	-webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -651,12 +656,14 @@ main > .pg-section > h1 {
 
 .highlights > ol {
 	display: -webkit-flex;
-	display: -ms-flex;
+	display: -ms-flexbox;
 	display: flex;    
 	-webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-	flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .highlight-list li {
