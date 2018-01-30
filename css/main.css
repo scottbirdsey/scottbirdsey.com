@@ -35,6 +35,16 @@
 	list-style: none;
 }
 
+::selection {
+  background: #ff45d3; /* WebKit/Blink Browsers */
+  color: white;
+}
+
+::-moz-selection {
+  background: #ff45d3; /* Gecko Browsers */
+  color: white;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -102,6 +112,7 @@ a.button, a.button:visited, input[type=submit] {
 	border-radius: 4px;
 	font-size: 1rem;
 	cursor: pointer;
+	letter-spacing: 1px;
 }
 
 a.button:hover, input[type=submit]:hover{
@@ -497,6 +508,52 @@ main > .pg-section > h1 {
 	color: silver;
 }
 
+.post {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.post.work {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.post.work .post-title {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1em;
+	padding-bottom: .25em;
+	border-bottom: 1px solid silver;
+}
+
+.post.work .post-content {
+	margin-top: 0;
+}
+
+aside.summary {
+	order: 2;
+	width: 28%;
+}
+
+aside.summary > .button + * {
+	margin-top: 1.5em;
+}
+
+aside.summary > h2 {
+	color: silver;
+	font-size: 1.25rem;
+}
+
+aside.summary li {
+	font-size: 1.25rem;
+	font-style: italic;
+	list-style: disc;
+}
 /* Grids */
 
 
@@ -651,7 +708,7 @@ main > .pg-section > h1 {
     color: #585656;
 	font-size: 1.5em;
 	text-align: center;
-	margin-bottom: .5em;
+	margin-bottom: 1em;
 }
 
 .highlights > ol {
