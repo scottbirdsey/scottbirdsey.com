@@ -509,15 +509,15 @@ main > .pg-section > h1 {
 }
 
 .post {
+}
+
+.post.work {
 	display: -ms-flexbox;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-}
-
-.post.work {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -545,14 +545,13 @@ aside.summary > .button + * {
 }
 
 aside.summary > h2 {
-	color: silver;
 	font-size: 1.25rem;
+	margin-bottom: .5rem;
 }
 
 aside.summary li {
 	font-size: 1.25rem;
 	font-style: italic;
-	list-style: disc;
 }
 /* Grids */
 
