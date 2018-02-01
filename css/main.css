@@ -511,16 +511,29 @@ main > .pg-section > h1 {
 .post {
 }
 
-.post.work {
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+@media (min-width: 68.5em) {
+
+	.post.work {
+		display: -ms-flexbox;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	    -webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	}
+
+	.post.work .post-content {
+		margin-top: 0;
+		width: 64%;
+	}	
+
+	aside.summary {
+		order: 2;
+		width: 28%;
+	}
 }
 
 .post.work .post-title {
@@ -531,17 +544,18 @@ main > .pg-section > h1 {
 	border-bottom: 1px solid silver;
 }
 
-.post.work .post-content {
-	margin-top: 0;
+.post.work > .post-content > *:not(figure) {
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-aside.summary {
-	order: 2;
-	width: 28%;
+aside.summary .button {
+	font-size: .9rem;
 }
 
-aside.summary > .button + * {
-	margin-top: 1.5em;
+aside.summary > * {
+	margin-bottom: 1.5em;
 }
 
 aside.summary > h2 {
@@ -552,6 +566,45 @@ aside.summary > h2 {
 aside.summary li {
 	font-size: 1.25rem;
 	font-style: italic;
+}
+
+aside.summary .list {
+	width: 100%;
+}
+
+@media (min-width: 37.5em) {
+
+	aside.summary .links {
+		width: 100%;
+	}
+
+	aside.summary {
+		display: -ms-flexbox;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	    -webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	}
+
+	aside.summary .list {
+		width: 48%;
+	}
+	
+}
+
+
+@media (min-width: 68.5em) {
+	aside.summary {
+		display: block;
+	}
+
+	aside.summary .list {
+		width: auto;
+	}
 }
 /* Grids */
 
