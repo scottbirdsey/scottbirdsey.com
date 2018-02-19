@@ -58,7 +58,17 @@ body {
 	font-weight: 400;
 	background: #fcfeff;
 	color: #4c4949;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
 
+}
+
+main {
+	-ms-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
 }
 
 input, textarea {
@@ -910,6 +920,11 @@ figure.left, figure.right {
 	margin: 1em auto;
 	font-style: italic;
 }
+
+.post-content {
+	margin-bottom: calc( 4vmin);
+}
+
 .post-content > * {
 	margin-bottom: 1.5em;
 }
