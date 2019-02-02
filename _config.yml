@@ -41,3 +41,11 @@ permalink: /:categories/:title
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - Dockerfile
+  - .dockerignore
+  - .gitignore
+  - _config.yml
+  - Gemfile
+  - Gemfile.lock
+  - .git
