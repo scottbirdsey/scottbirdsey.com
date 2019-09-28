@@ -1,1 +1,2 @@
-Redirect /writes/on-transgendered-athletes-racing-bikes-on-myself-racing-bikes.html /writes/on-transgender-athletes-racing-bikes-on-myself-racing-bikes.html
+RewriteEngine on
+Redirect 301 / http://rift.bike/
